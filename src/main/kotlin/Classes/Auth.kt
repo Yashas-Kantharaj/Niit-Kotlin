@@ -1,4 +1,4 @@
-package Classes
+package classes
 
 object Auth {
     fun takeCredential(name: String, password: String) {

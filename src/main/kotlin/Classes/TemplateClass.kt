@@ -1,4 +1,4 @@
-package Classes
+package classes
 
 fun rentPrice(normalDay : Int, festiveDays : Int){
     val dayRates = object {
