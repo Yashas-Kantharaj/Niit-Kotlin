@@ -15,5 +15,15 @@ fun main() {
     println("none nos greater than 5: "+ nos.none{it > 5})
     println( "${nos.count()} nos are in the list")
     println("${nos.count() {it % 2==0}} even nos are int the list ")
+    val evenOdd = nos.partition { it %2 == 0 }
+    println("even nos are ${evenOdd.first}")
+    println("odd nos are ${evenOdd.second}")
+    val bagFruits = listOf<String>("apple","banana","chicku")
+    val bagClothes = listOf<String>("shirt","pant","tie")
+    val cart = listOf(bagFruits, bagClothes)
+    val mapBag = cart.map { it }
+    val flatMapBag = cart.flatMap { it }
+    println(mapBag)
+    println(flatMapBag)
 
 }
