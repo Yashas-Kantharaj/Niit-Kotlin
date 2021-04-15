@@ -12,9 +12,8 @@ fun main() {
     students.put(45,"avinash")
 
     println(students)
-    for (s in students){
-        if (s.value.startsWith("a"))
-            println(s)
-    }
+    val filteredMap = students.filter { (key, value) ->
+        value.startsWith("a")}
+    println(filteredMap)
 
 }
