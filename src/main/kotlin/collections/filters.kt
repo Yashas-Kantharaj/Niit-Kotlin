@@ -13,4 +13,7 @@ fun main() {
     println("Any nos greater than 3: "+ nos.any{it>2})
     println("All nos greater than 4: "+ nos.all{it <4})
     println("none nos greater than 5: "+ nos.none{it > 5})
+    println( "${nos.count()} nos are in the list")
+    println("${nos.count() {it % 2==0}} even nos are int the list ")
+
 }
